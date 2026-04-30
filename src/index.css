@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Aioha modal toggles visibility by adding the `hidden` class while keeping `flex`.
+   Tailwind v4's source order puts `.flex` after `.hidden`, so `flex` wins.
+   Force `hidden` to take precedence on the modal root only — broader scope
+   would clobber `.hidden` paths inside provider SVG icons. */
+#aioha-modal.hidden {
+  display: none !important;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
