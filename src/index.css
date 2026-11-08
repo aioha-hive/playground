@@ -2,6 +2,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* The modal's classes live in the published package, which Tailwind's
+   automatic source detection ignores under node_modules. Scan the built
+   output so utilities like `fixed`, `inset-0`, and `z-50` get generated. */
+@source '../node_modules/@aioha/react-ui/dist/**/*.js';
+
 /* Aioha modal toggles visibility by adding the `hidden` class while keeping `flex`.
    Tailwind v4's source order puts `.flex` after `.hidden`, so `flex` wins.
    Force `hidden` to take precedence on the modal root only — broader scope
