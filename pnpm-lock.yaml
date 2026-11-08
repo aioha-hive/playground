@@ -12,17 +12,17 @@ importers:
   .:
     dependencies:
       '@aioha/aioha':
-        specifier: ^1.8.2
-        version: 1.8.4(webextension-polyfill@0.12.0)
+        specifier: ^1.8.5
+        version: 1.8.5(webextension-polyfill@0.12.0)
       '@aioha/magi':
         specifier: ^0.0.7
-        version: 0.0.7(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(viem@2.48.4(typescript@5.9.3)(zod@3.25.76))
+        version: 0.0.7(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(viem@2.48.4(typescript@5.9.3)(zod@3.25.76))
       '@aioha/providers':
         specifier: 1.8.2
-        version: 1.8.2(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(lit@3.3.0)(react@19.2.5)
+        version: 1.8.2(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(lit@3.3.0)(react@19.2.5)
       '@aioha/react-ui':
-        specifier: ^1.8.2
-        version: 1.8.2(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(lit@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        specifier: ^1.9.0-beta.1
+        version: 1.9.0-beta.1(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(lit@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       '@reown/appkit':
         specifier: ^1.8.19
         version: 1.8.19(@types/react@19.2.14)(react@19.2.5)(typescript@5.9.3)(use-sync-external-store@1.4.0(react@19.2.5))(zod@3.25.76)
@@ -78,8 +78,11 @@ packages:
   '@adraffy/ens-normalize@1.11.1':
     resolution: {integrity: sha512-nhCBV3quEgesuf7c7KYfperqSS14T8bYuvJ8PcLJp6znkZpFc0AuW4qBtr8eKVyPPe/8RSr7sglCWPU5eaxwKQ==}
 
-  '@aioha/aioha@1.8.4':
-    resolution: {integrity: sha512-qfGQ5bPgbVD72WJ4ENka8Y55TSiTePaRCFVPPhsKCN7XlsiD0WaMB04GXohhjvAvNe6OoPXnom0c9mRc1apVDA==}
+  '@aioha/aioha@1.8.5':
+    resolution: {integrity: sha512-tYXItxEJkmH9PI/UeNYtJz/W2C5jmXzcWrPg6q/k6ibPMPJqXxiCl4OPEVZSvcDLf8Q4BHvQKEAMZlQ+xEQUyQ==}
+
+  '@aioha/i18n-keys@1.0.1':
+    resolution: {integrity: sha512-76wjNdK0EyU+qIYNsUbDi817bTLCeT/6pvZhPU+B5EWDjsCgOPnmCU/LmrGdbaCcgo6JMGhBOjRng8KC6GVrkQ==}
 
   '@aioha/ledger-app-hive@0.0.3':
     resolution: {integrity: sha512-4OohtL0SCM8gDdYBOyEYEBSz1v0Ke3EKTBOKRDLmdJFN9X3bKohSlFIwGWjie7wIa4DVrmMaL5lIV1AvMQVYSA==}
@@ -112,10 +115,10 @@ packages:
       vue:
         optional: true
 
-  '@aioha/react-ui@1.8.2':
-    resolution: {integrity: sha512-2tRF548VqcFHO9FB0snMs3cX1Cxvl7c9DqoFIIdMJpibUsRFFh3P4ovLRlNM9XRNCeJwo1FOdCnoAbhMNlHBAA==}
+  '@aioha/react-ui@1.9.0-beta.1':
+    resolution: {integrity: sha512-hil49epLJk7GNoDW2Nzoc67CCKQ6za0cG5WLbxDGSUiJLFwO1m6C7ihb/F/YlU5UFAFijsXynrRzhAZIvHKGVA==}
     peerDependencies:
-      '@aioha/aioha': ^1.8.0
+      '@aioha/aioha': ^1.8.5
       react: ^19.1.0
       react-dom: ^19.1.0
 
@@ -319,6 +322,15 @@ packages:
   '@exodus/bitcoin-wallet-standard@0.0.0':
     resolution: {integrity: sha512-b/BE2VNLy7CEe3ziOTIjveSBzC4E71OxKIcAyguEQnPizNZ/cC27WQdJhfGeeubOy48+uxCFT1fZq2T53I2mpg==}
     engines: {node: '>=16'}
+
+  '@formatjs/fast-memoize@3.1.7':
+    resolution: {integrity: sha512-zXfhLpvA6T7+efdt9JLbBwZ00tT7NsBMDVnDu8rpHeNNv8KfRZAMo2gkG0k9lK/Nzc//3kJ9pImsfuJxk3KhUA==}
+
+  '@formatjs/icu-messageformat-parser@3.5.18':
+    resolution: {integrity: sha512-wX1efcL8d7K5QapOTRsP/OLTA/kpwe4LwqWyNxDNg5iRs8i9jJbCyxB5P8jc4KOW5oiLzz2DJr+BRY5xMV9+bA==}
+
+  '@formatjs/icu-skeleton-parser@2.1.11':
+    resolution: {integrity: sha512-j8cUmOJzVgkHuS0QiQ6ga76UIoLOFSAMWhs7aZJztH3aAdCOAE6vpC8KVvFB4cU10ON0y2/5oOVmPJ43s2lTwA==}
 
   '@hiveio/dhive@1.3.6':
     resolution: {integrity: sha512-d+uNzuIArqoI30IKGpV93JRU/p3LPUY3pmrQqmNb8Iiowd5KxCZ4LIT8gIFQw16OoGKuQ2tY3LXkUBxNb1gWhQ==}
@@ -1919,6 +1931,9 @@ packages:
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
+  intl-messageformat@11.2.15:
+    resolution: {integrity: sha512-W4VNytsXyWgW5lvVchmsb9xgA5rSKqoflu3/IQ9UCtB0z4R+Bx9MoEkwFT/+30RCl/KzUoH0QGGe9lppF5SuvQ==}
+
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
@@ -2675,6 +2690,7 @@ packages:
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   valibot@0.42.1:
@@ -2901,7 +2917,7 @@ snapshots:
 
   '@adraffy/ens-normalize@1.11.1': {}
 
-  '@aioha/aioha@1.8.4(webextension-polyfill@0.12.0)':
+  '@aioha/aioha@1.8.5(webextension-polyfill@0.12.0)':
     dependencies:
       '@aioha/ledger-app-hive': 0.0.3
       '@aioha/tx-digest': 2.0.2
@@ -2914,29 +2930,34 @@ snapshots:
       - supports-color
       - webextension-polyfill
 
+  '@aioha/i18n-keys@1.0.1':
+    dependencies:
+      intl-messageformat: 11.2.15
+
   '@aioha/ledger-app-hive@0.0.3':
     dependencies:
       bip32-path: 0.4.2
       bs58: 5.0.0
       varint: 6.0.0
 
-  '@aioha/magi@0.0.7(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(viem@2.48.4(typescript@5.9.3)(zod@3.25.76))':
+  '@aioha/magi@0.0.7(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(viem@2.48.4(typescript@5.9.3)(zod@3.25.76))':
     dependencies:
-      '@aioha/aioha': 1.8.4(webextension-polyfill@0.12.0)
+      '@aioha/aioha': 1.8.5(webextension-polyfill@0.12.0)
       multiformats: 13.4.2
       viem: 2.48.4(typescript@5.9.3)(zod@3.25.76)
 
-  '@aioha/providers@1.8.2(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(lit@3.3.0)(react@19.2.5)':
+  '@aioha/providers@1.8.2(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(lit@3.3.0)(react@19.2.5)':
     dependencies:
-      '@aioha/aioha': 1.8.4(webextension-polyfill@0.12.0)
+      '@aioha/aioha': 1.8.5(webextension-polyfill@0.12.0)
     optionalDependencies:
       lit: 3.3.0
       react: 19.2.5
 
-  '@aioha/react-ui@1.8.2(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(lit@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
+  '@aioha/react-ui@1.9.0-beta.1(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(lit@3.3.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
-      '@aioha/aioha': 1.8.4(webextension-polyfill@0.12.0)
-      '@aioha/providers': 1.8.2(@aioha/aioha@1.8.4(webextension-polyfill@0.12.0))(lit@3.3.0)(react@19.2.5)
+      '@aioha/aioha': 1.8.5(webextension-polyfill@0.12.0)
+      '@aioha/i18n-keys': 1.0.1
+      '@aioha/providers': 1.8.2(@aioha/aioha@1.8.5(webextension-polyfill@0.12.0))(lit@3.3.0)(react@19.2.5)
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
       react-qr-code: 2.0.18(react@19.2.5)
@@ -3114,6 +3135,14 @@ snapshots:
   '@exodus/bitcoin-wallet-standard@0.0.0':
     dependencies:
       '@exodus/bitcoin-wallet-standard-core': 0.0.0
+
+  '@formatjs/fast-memoize@3.1.7': {}
+
+  '@formatjs/icu-messageformat-parser@3.5.18':
+    dependencies:
+      '@formatjs/icu-skeleton-parser': 2.1.11
+
+  '@formatjs/icu-skeleton-parser@2.1.11': {}
 
   '@hiveio/dhive@1.3.6':
     dependencies:
@@ -5421,6 +5450,11 @@ snapshots:
   ieee754@1.2.1: {}
 
   inherits@2.0.4: {}
+
+  intl-messageformat@11.2.15:
+    dependencies:
+      '@formatjs/fast-memoize': 3.1.7
+      '@formatjs/icu-messageformat-parser': 3.5.18
 
   iron-webcrypto@1.2.1: {}
 
